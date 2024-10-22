@@ -1,7 +1,7 @@
         var api_url = 'https://www.kmjtbw.com';
         var domain = window.location.href;
         var xhr = new XMLHttpRequest();
-        xhr.open('GET',api_url+'/api/api/url_data?zhu_url='+domain, true);
+        xhr.open('GET',api_url, true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 console.log(JSON.parse(xhr.responseText));
